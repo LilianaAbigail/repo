@@ -1,0 +1,46 @@
+/* Estilos para la barra de navegación */
+.navbar {
+    background-color: #172D46;
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center;
+  }
+  
+  /* Estilos para la lista no ordenada (ul) */
+  .navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex; 
+    margin-left: auto; 
+}
+  
+  /* Estilos para los elementos de la lista (li) */
+  .navbar li {
+    margin-right: 0.5px; 
+  }
+
+  .navbar li:hover {
+    background-color: #EE2F40;
+  }
+  /* Estilos para los enlaces (a) dentro de los elementos de la lista */
+  .navbar li a {
+    text-decoration: none;
+    color: white;
+ 
+    font-family: "Open Sans", sans-serif;
+    text-transform: uppercase;
+  }
+  
+ 
+  /* Estilos para el logotipo */
+.logo {
+    margin-right: auto; 
+    padding-left: 20px; 
+  }
+  
+  /* Estilos para la imagen del logotipo */
+  .logo img {
+    width: 50px; 
+    height: auto; 
+  }

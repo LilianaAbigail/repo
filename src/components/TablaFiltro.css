@@ -1,0 +1,16 @@
+.tableFilter {
+    border-collapse: collapse;
+    width: calc(50% - 5px); 
+  
+    flex-basis: calc(25% - 5px);
+    box-sizing: border-box;
+    margin-bottom: 10px;
+}
+
+.tableFilter th {
+    background-color: #172D46;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    text-align: center;
+}
