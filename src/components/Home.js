@@ -1,31 +1,31 @@
 import React, { Component } from 'react';
 import TablaRegistro from './TablaRegistro';
 import TablaFiltro from './TablaFiltro';
-import './Home.css';
+import './Home.css'; 
 import BarraFiltros from './BarraFiltros';
 
 class Home extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      datosCompartidos: [],
+      datosCompartidos: [], 
       departamento: '',
       celda: '',
-      fechaSeleccionada: '',
-      turnoSeleccionado: '',
+ 
+      fechaSeleccionada:'',
+              turnoSeleccionado:'',
     };
-    this.actualizarFechaYTurno = this.actualizarFechaYTurno.bind(this);
+     this.actualizarFechaYTurno = this.actualizarFechaYTurno.bind(this);
   }
-
 
   actualizarDatosCompartidos = (nuevosDatos) => {
     this.setState({ datosCompartidos: nuevosDatos });
   };
 
-  actualizarFechaYTurno = (fecha, turnoSeleccionado) => {
-    console.log('Valor de turno antes de la actualización:', turnoSeleccionado);
-    this.setState({ fecha, turnoSeleccionado });
-  };
+   actualizarFechaYTurno = (fecha, turnoSeleccionado) => {
+     console.log('Valor de turno antes de la actualización:', turnoSeleccionado);
+     this.setState({ fecha, turnoSeleccionado });
+   };
 
 
   actualizarDepartamento = (departamento) => {
@@ -38,38 +38,31 @@ class Home extends Component {
 
 
 
+
   render() {
     return (
-      <div>
+      <div> 
         <BarraFiltros
           actualizarDepartamento={this.actualizarDepartamento}
           actualizarCelda={this.actualizarCelda}
-
-
+       
+          
         />
-        <div className="home-container">
-
-
-          <div className="tabla-filtro">
-            <TablaFiltro
-              datosCompartidos={this.state.datosCompartidos}
-
-
-            />
-          </div>
-
-
-          <div className="tabla-registro">
-            <TablaRegistro
+      <div className="home-container">
+        
+     
+        <div className="tabla-registro">
+        <TablaRegistro
               datosCompartidos={this.state.datosCompartidos}
               actualizarDatosCompartidos={this.actualizarDatosCompartidos}
-              actualizarFechaYTurno={this.actualizarFechaYTurno}
+               actualizarFechaYTurno={this.actualizarFechaYTurno}
               departamento={this.state.departamento}
               celda={this.state.celda}
-
-
+          
             />
-          </div></div>
+
+            
+        </div></div>
       </div>
     );
   }

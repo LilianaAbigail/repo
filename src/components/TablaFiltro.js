@@ -17,9 +17,8 @@ class TablaFiltro extends Component {
           SKU: 'SKU456',
         },
 
-
       ], turnoSeleccionado: '',
-      fechaSeleccionada: '',
+      fechaSeleccionada: '', 
     };
   }
 
@@ -30,7 +29,7 @@ class TablaFiltro extends Component {
       <div>
         <h2>Filter</h2>
 
-
+  
         {fechaSeleccionada && <p>Date: {fechaSeleccionada}</p>}
         {turnoSeleccionado && <p>Turno: {turnoSeleccionado}</p>}
 
@@ -38,18 +37,18 @@ class TablaFiltro extends Component {
           <thead>
             <tr>
               <th>ID</th>
-              <th>MACHINE</th>
+         
               <th>SKU</th>
-
+              
             </tr>
           </thead>
           <tbody>
             {datosCompartidos.map((registro) => (
               <tr key={registro.ID}>
                 <td>{registro.ID}</td>
-                <td>{registro.MACHINE}</td>
+            
                 <td>{registro.SKU}</td>
-
+                
               </tr>
             ))}
           </tbody>

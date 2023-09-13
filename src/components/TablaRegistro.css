@@ -1,16 +1,36 @@
+
+.encendida {
+  background-color: #4CAF50; 
+  color: white;
+}
+
 .tableEdit {
   border-collapse: collapse;
-  width: calc(50% - 5px);
+  width: calc(50% - 5px); 
 
-  flex-basis: calc(25% - 5px);
-  box-sizing: border-box;
+  flex-basis: calc(25% - 5px); 
+  box-sizing: border-box; 
   margin-bottom: 10px;
 }
 
 .tableEdit th {
-  background-color: #EE2F40;
-  color: white;
-  font-weight: bold;
-  padding: 10px;
-  text-align: center;
+background-color: #EE2F40;
+color: white;
+font-weight: bold;
+padding: 10px;
+text-align: center;
+}
+
+
+.contenedor-tablas {
+display: flex;
+flex-direction: row;
+}
+
+.tabla-izquierda {
+flex-basis: 30%; 
+}
+
+.tabla-derecha {
+flex-basis: 50%; 
 }
